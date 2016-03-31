@@ -5,6 +5,9 @@ dependencies:
   override:
     - npm install -g harp
     - sudo pip install awscli
+test:
+  override:
+    - echo "No tests"
 deployment:
   hub:
     branch: master

@@ -1,5 +1,7 @@
 ## The change-maker website
 
+[![Circle CI](https://circleci.com/gh/Joe8Bit/change-maker-website.svg?style=svg)](https://circleci.com/gh/Joe8Bit/change-maker-website)
+
 http://change-maker.io
 
 This repos contains the (currently very basic) website for the change make project. It is a static site that is generated using the static site generator [Harp](https;//harpjs.com). It is hosted on S3.
@@ -26,7 +28,7 @@ harp compile
 The site is continuously deployed in the following way:
 
 1. A commit happens on this repos `master` branch
-2. The static site is built on CircleCI
+2. The static site is built on [CircleCI](https://circleci.com/gh/Joe8Bit/change-maker-website)
 3. CircleCI pushes the built assets to Amazon S3
 
 ## Contrubuting
