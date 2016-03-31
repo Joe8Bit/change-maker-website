@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 5.9.0
+dependencies:
+  override:
+    - npm install -g harp
+    - sudo pip install awscli
+deployment:
+  hub:
+    branch: master
+    commands:
+      - harp compile
+      - aws s3 sync www s3://change-maker.io/ --delete --acl public-read

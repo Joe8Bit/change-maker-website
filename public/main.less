@@ -1,0 +1,85 @@
+// Colours
+@base-tone-dark: #000000;
+@base-tone-mid-dark: #263248;
+@base-tone-mid-light: #7E8AA2;
+@base-tone-light: #FFFFFF;
+@base-tone-highlight: #FF9800;
+
+// Rules
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 140%;
+  background: @base-tone-light;
+  color: #444;
+}
+
+a {
+  color: @base-tone-highlight;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: darken(@base-tone-highlight, 10%);
+  }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    margin: 4rem 0;
+
+    h1 {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      width: 50%;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto;
+      width: 50%;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline-block;
+          float: right;
+        }
+      }
+    }
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid @base-tone-mid-light;
+  font-size: 0.8rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.container {
+  width: 50rem;
+  margin: 0 auto;
+}
